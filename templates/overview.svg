@@ -45,14 +45,6 @@
       color: rgb(145, 145, 145);
     }
 
-    tr {
-      transform: translateX(-200%);
-      animation-duration: 1s;
-      animation-name: slideIn;
-      animation-function: ease-in-out;
-      animation-fill-mode: forwards;
-    }
-
     .label {
       font-weight: 600;
       color: rgb(139, 139, 139);
@@ -63,12 +55,6 @@
       margin-right: 1ch;
       vertical-align: top;
     }
-
-    @keyframes slideIn {
-      to {
-        transform: translateX(0);
-      }
-    }
   </style>
   <g>
     <rect x="5" y="5" id="background" />
@@ -78,7 +64,7 @@
 
           <table>
             <thead>
-              <tr style="transform: translateX(0);">
+              <tr>
                 <th colspan="2">{{ name }}'s GitHub Statistics</th>
               </tr>
             </thead>
@@ -94,7 +80,7 @@
                 <td>{{ stars }}</td>
               </tr>
 
-              <tr style="animation-delay: 150ms">
+              <tr>
                 <td class='label'><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                     version="1.1" width="16" height="16" role="img">
                     <path fill-rule="evenodd"
@@ -104,7 +90,7 @@
                 <td>{{ forks }}</td>
               </tr>
 
-              <tr style="animation-delay: 300ms">
+              <tr>
                 <td class='label'><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                     version="1.1" width="16" height="16" aria-hidden="true">
                     <path fill-rule="evenodd"
@@ -114,7 +100,7 @@
                 <td>{{ contributions }}</td>
               </tr>
 
-              <tr style="animation-delay: 450ms">
+              <tr>
                 <td class='label'><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
                     height="16">
                     <path fill-rule="evenodd"
@@ -124,7 +110,7 @@
                 <td>{{ lines_changed }}</td>
               </tr>
 
-              <tr style="animation-delay: 600ms">
+              <tr>
                 <td class='label'><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16"
                     height="16">
                     <path fill-rule="evenodd"
@@ -134,7 +120,7 @@
                 <td>{{ views }}</td>
               </tr>
 
-              <tr style="animation-delay: 750ms">
+              <tr>
                 <td class='label'><svg class="octicon" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"
                     version="1.1" width="16" height="16" aria-hidden="true">
                     <path fill-rule="evenodd"
